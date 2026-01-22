@@ -4,6 +4,11 @@
     --list-back: #DBDFD0;
     --footer-logo-back: #AD343E;
     --neutral: #ADB29E;
+    --nav-height : 152px
+}
+
+main {
+    padding-top: var(--nav-height)
 }
 
 * {
@@ -14,6 +19,7 @@
 }
 
 header {
+    max-height: var(--nav-height);
     background-color: white;
     width: 100%;
     position: fixed;
@@ -165,12 +171,16 @@ main {
     height: 100vh;
 }
 
-.slider-holder{
+
+.slider-holder {
+    /* opacity: 0; */
     display: none;
     overflow: hidden;
 }
+
 .slider-nav {
     border-bottom: 1px rgba(0, 0, 0, 0.444) solid;
+    background-color: white;
     /* border-top: none; */
     height: 100px;
     width: 100%;
@@ -387,9 +397,12 @@ footer {
 
 @media (max-width:1000px) {
 
-    .slider-holder{
+    .slider-holder {
         display: block;
+        /* background-color: transparent !important; */
+
     }
+
     .down-section {
         nav {
             display: none;
@@ -423,6 +436,10 @@ footer {
 
 @media (max-width:550px) {
 
+    header{
+        max-height: 195px;
+        background-color: white;
+    }
     #mail-text {
         display: none;
     }

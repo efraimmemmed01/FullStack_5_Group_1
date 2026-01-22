@@ -1,0 +1,13 @@
+Salam dostlar,
+
+    Navbarin olcusu qeder main-ne (yeni 150px) padding verin zehmet olmasa. 
+    Header Fixed oldugu ucun contentin ustune cixir butun dizayninizin 150 pixellik hissesi
+    onun altinda qalacaq. Zehmet olmasa oxuyun problemi hell etmeye calismamisdan qabaq bunu oxudugunuzdan emin ol.
+
+    men ozum nav_foot css-inde maine 150 px padding verecem, 
+    eger sehifenizin ust hissesinde xususi bir error yasasaniz mene bildirin.
+
+    Xususi bildiris, eger sehifenizde main yoxdursa elave edin! Strukturu duz quraq.
+
+
+Hormetle Jafar Yad Planetdendir.
