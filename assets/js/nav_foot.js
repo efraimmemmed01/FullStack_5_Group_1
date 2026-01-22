@@ -17,6 +17,8 @@ a.forEach((x) => {
         x.classList.add("active-link")
         console.log("we are here");
 
+    }else if(currentPath=="book.html"){
+        a[0].classList.add("active-link")
     }
 }
 );
@@ -27,12 +29,7 @@ let down_items_div = document.querySelector(".down-items")
 let btn_book = down_items_div.querySelector("button")
 
 btn_book.addEventListener("click", () => {
-
-    setTimeout(() => {
-        window.open("book.html", "_self")
-
-    }, 100)
-
+    window.open("book.html", "_self")
 })
 btn_book.addEventListener("mousedown", () => {
     btn_book.classList.toggle("btn-color-on-click")
@@ -42,7 +39,7 @@ btn_book.addEventListener("mouseup", () => {
 
 })
 
-
+// Sliding menu implementation
 let slider_nav = document.querySelector(".slider-nav")
 let bar_btn = document.querySelector(".fa-bars")
 slider_nav.classList.toggle("move-down")
