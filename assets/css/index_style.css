@@ -3,6 +3,7 @@
     --border-color: #DBDFD0;
     --card-desc-color: #414536;
     --card-logo-color: #4D592B;
+    --div-img-color: #474747;
 }
 
 * {
@@ -29,7 +30,7 @@ button:hover {
 
 /* ========================================== */
 
-
+/* splash screen ===================================== */
 .splash-screen {
     /* margin-top: 150px; */
     background-image: url("/assets/image/splash_art_main_bg.png");
@@ -79,6 +80,9 @@ button:hover {
     }
 }
 
+/* ================================================= */
+/* Browse menu section */
+
 .browse-menu {
 
     article {
@@ -88,7 +92,7 @@ button:hover {
         align-items: center;
     }
 
-    h1{
+    h1 {
         padding-top: 94px;
     }
 
@@ -143,8 +147,110 @@ button:hover {
     }
 }
 
+/* -------------------------------------------------------- */
 
 
+/* Home About start */
+
+
+.home-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0px;
+
+    article {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .left {
+            position: static;
+            background-image: url("/assets/image/home_section3_bg.jpg");
+            width: 550px;
+            height: 550px;
+            background-size: cover;
+            border-radius: 12px;
+
+            .left-card {
+                position: relative;
+                top: 295px;
+                left: 240px;
+                background-color: var(--div-img-color);
+                width: 410px;
+                height: 320px;
+                padding: 50px;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                gap: 45px;
+                border-radius: 12px;
+
+                .details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                }
+
+                a {
+                    color: white;
+                }
+            }
+        }
+
+
+        .right {
+            width: 450px;
+            height: 550px;
+
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            h1{
+                font-size: 53px;
+                font-weight: 400;
+            }
+            .place{
+                color: var(--card-desc-color);
+            }
+
+            .btn {
+                width: 180px;
+                height: 64px;
+                margin-top: 16px;
+                color: black;
+                background-color: white;
+                padding: 20px 32px;
+                border: 1.5px solid black;
+                border-radius: 118px;
+                font-weight: bold;
+                transition: 0.4s;
+            }
+
+            .btn:hover {
+                background-color: rgba(200, 198, 198, 0.773);
+            }
+        }
+
+
+    }
+}
+
+
+
+@media (max-width:1300px) {
+    .home-about {
+        article {
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 100px;
+            align-items: center;
+
+        }
+
+    }
+}
 
 
 @media (max-width:800px) {
