@@ -31,7 +31,7 @@ btn_book.addEventListener("click", () => {
     setTimeout(() => {
         window.open("book.html", "_self")
 
-    },100)
+    }, 100)
 
 })
 btn_book.addEventListener("mousedown", () => {
@@ -42,3 +42,16 @@ btn_book.addEventListener("mouseup", () => {
 
 })
 
+
+let slider_nav = document.querySelector(".slider-nav")
+let bar_btn = document.querySelector(".fa-bars")
+slider_nav.classList.toggle("move-down")
+
+bar_btn.addEventListener("click", () => {
+    slider_nav.classList.toggle("move-down")
+
+    // slider_nav.classList.toggle("display-none")
+    // setTimeout(() => {
+
+    // },2)
+})
