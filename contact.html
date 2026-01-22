@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/contact.css">
 </head>
 <body>
+
+    
+    <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+
+
+
+    <!-- Header yaz bura djafar -->
+    <!-- <header>...</header> -->
+
+    <div class="contact-us-wrapper" style="padding-bottom: 4rem;">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Bizimlə Əlaqə</h1>
+                <p class="page-subtitle">Sualınız var? Bizimlə əlaqə saxlamaqdan çəkinməyin, sizə kömək etməkdən məmnun olarıq.</p>
+            </div>
+
+            <div class="main-card">
+                <form id="contactForm" class="styled-form">
+                    <!-- Row 1 -->
+                    <div class="form-group">
+                        <label for="name">Ad</label>
+                        <input type="text" id="name" class="form-control" placeholder="Adınızı daxil edin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-poçt</label>
+                        <input type="email" id="email" class="form-control" placeholder="E-poçt ünvanınızı daxil edin" required>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="form-group full-width">
+                        <label for="subject">Mövzu</label>
+                        <select id="subject" class="form-control" required>
+                            <option value="">Mövzunu seçin</option>
+                            <option value="Rezervasiya">Rezervasiya</option>
+                            <option value="Ad günü / Özəl tədbir">Ad günü / Özəl tədbir</option>
+                            <option value="Şikayət və ya Təklif">Şikayət və ya Təklif</option>
+                            <option value="Digər">Digər (Özünüz yazın)</option>
+                        </select>
+                        <input type="text" id="otherSubject" class="form-control hidden" placeholder="Mövzunu bura yazın" style="margin-top: 10px;">
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="form-group full-width">
+                        <label for="message">Mesaj</label>
+                        <textarea id="message" class="form-control" placeholder="Mesajınızı bura yazın" required></textarea>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group full-width">
+                        <button type="submit" class="btn-submit">Göndər</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Footer Infosudur -->
+            <div class="contact-footer-info">
+                <div class="info-col">
+                    <h3>Bizə Zəng Edin:</h3>
+                    <p class="phone-highlight"><a href="https://api.whatsapp.com/send/?phone=994704121237&text=ELL%C4%B0NMMC(İNNOVATİVE_GROUP)%EF%BF%BD&type=phone_number&app_absent=0"target="_blank">+994 70 412 12 37</a></p>
+                </div>
+                <div class="info-col">
+                    <h3>İş Saatları:</h3>
+                    <p>B.e.-Cümə: 09:00 - 18:00</p>
+                    <p>Şənbə, Bazar: 10:00 - 12:00</p>
+                </div>
+                <div class="info-col">
+                    <h3>Ünvanımız:</h3>
+                    <p><a href="https://maps.app.goo.gl/EDH43RcskMF8Fkp96" target="_blank">İçərişəhər, istiqlaliyyət 31</a></p>
+                    <p>Bakı, Azərbaycan, 1000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer yaz bura djafar -->
+    <!-- <footer>...</footer> -->
+
+    <script src="assets/js/contact.js"></script>
     
 </body>
 </html>
