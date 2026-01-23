@@ -15,7 +15,11 @@
 <body>
 
     <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-moon">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
     </button>
 
 
@@ -23,71 +27,6 @@
     <!-- Header senniydi djafar -->
     <!-- <header>...</header> -->
 
-    <div class="book-table-wrapper">
-        <div class="container" style="position: relative; z-index: 2;">
-            <div class="page-header">
-                <h1 class="page-title">Masa Sifarişi</h1>
-                <p class="page-subtitle">Biz sizin rahatlığınız üçün hər bir detalı düşünürük və sizə unudulmaz təcrübə yaşatmaq üçün çalışırıq.</p>
-            </div>
-
-            <div class="main-card">
-                <form id="bookingForm" class="styled-form">
-                    <div class="form-group">
-                        <label for="date">Tarix</label>
-                        <input type="date" id="date" class="form-control" placeholder="GG/AA/İİİİ" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="time">Saat</label>
-                        <select id="time" class="form-control" required>
-                            <option value="">Vaxtı seçin</option>
-                            <option value="17:00">17:00 (24 saatlıq rejim)</option>
-                            <option value="17:30">17:30 (24 saatlıq rejim)</option>
-                            <option value="18:00">18:00 (24 saatlıq rejim)</option>
-                            <option value="18:30">18:30 (24 saatlıq rejim)</option>
-                            <option value="19:00">19:00 (24 saatlıq rejim)</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="name">Ad</label>
-                        <input type="text" id="name" class="form-control" placeholder="Adınızı daxil edin" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Əlaqə Nömrəsi</label>
-                        <input type="tel" id="phone" class="form-control" placeholder="x-xxx-xxx-xxxx" required>
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label for="person">Neçə Nəfər</label>
-                        <select id="person" class="form-control" required>
-                            <option value="1">1 Nəfər</option>
-                            <option value="2">2 Nəfər</option>
-                            <option value="3">3 Nəfər</option>
-                            <option value="4">4 Nəfər</option>
-                            <option value="5">5+ Nəfər</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group full-width">
-                        <button type="submit" class="btn-submit">Masa Sifariş Et</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <div class="map-background-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.428490145624!2d49.85447731536412!3d40.37719497936968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d079efb5163%3A0xc20aa51a5f0f5e01!2sBaku%2C%20Azerbaijan!5e0!3m2!1sen!2s!4v1645564756836!5m2!1sen!2s" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
-        </div>
-    </div>
-
-    <!-- Footer senniydi djafar -->
-    <!-- <footer>...</footer> -->
-
-    <script src="assets/js/book.js"></script>
 
     <header>
         <div class="black-lent">
@@ -155,6 +94,77 @@
         </div>
 
     </header>
+
+    <main>
+        <div class="book-table-wrapper">
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="page-header">
+                    <h1 class="page-title">Masa Sifarişi</h1>
+                    <p class="page-subtitle">Biz sizin rahatlığınız üçün hər bir detalı düşünürük və sizə unudulmaz
+                        təcrübə
+                        yaşatmaq üçün çalışırıq.</p>
+                </div>
+
+                <div class="main-card">
+                    <form id="bookingForm" class="styled-form">
+                        <div class="form-group">
+                            <label for="date">Tarix</label>
+                            <input type="date" id="date" class="form-control" placeholder="GG/AA/İİİİ" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Saat</label>
+                            <select id="time" class="form-control" required>
+                                <option value="">Vaxtı seçin</option>
+                                <option value="17:00">17:00 (24 saatlıq rejim)</option>
+                                <option value="17:30">17:30 (24 saatlıq rejim)</option>
+                                <option value="18:00">18:00 (24 saatlıq rejim)</option>
+                                <option value="18:30">18:30 (24 saatlıq rejim)</option>
+                                <option value="19:00">19:00 (24 saatlıq rejim)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Ad</label>
+                            <input type="text" id="name" class="form-control" placeholder="Adınızı daxil edin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Əlaqə Nömrəsi</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="x-xxx-xxx-xxxx" required>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="person">Neçə Nəfər</label>
+                            <select id="person" class="form-control" required>
+                                <option value="1">1 Nəfər</option>
+                                <option value="2">2 Nəfər</option>
+                                <option value="3">3 Nəfər</option>
+                                <option value="4">4 Nəfər</option>
+                                <option value="5">5+ Nəfər</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn-submit">Masa Sifariş Et</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-background-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.428490145624!2d49.85447731536412!3d40.37719497936968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d079efb5163%3A0xc20aa51a5f0f5e01!2sBaku%2C%20Azerbaijan!5e0!3m2!1sen!2s!4v1645564756836!5m2!1sen!2s"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- Footer senniydi djafar -->
+    <!-- <footer>...</footer> -->
+
 
 
     <footer>
@@ -230,6 +240,7 @@
         <p class="footer-end">Copyright © 2026 Nurcahan, Ramazan, Rasul, Rafiq, Jafar. All Rights Reserved.</p>
 
     </footer>
+    <script src="assets/js/book.js"></script>
 
     <script src="assets/js/nav_foot.js"></script>
 </body>

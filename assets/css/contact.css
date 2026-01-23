@@ -35,7 +35,13 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     transition: background-color 0.3s ease, color 0.3s ease; 
+    height: auto;
 }
+main{
+    height: auto ;
+}
+
+
 
 h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
@@ -44,10 +50,15 @@ h1, h2, h3, h4 {
 
 .container {
     max-width: 1200px;
+    height: auto;
     margin: 0 auto;
     padding: 0 1rem;
     position: relative;
     z-index: 2;
+}
+
+.contact-us-wrapper{
+    height: auto;
 }
 
 .text-center {
