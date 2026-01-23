@@ -1,11 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book A Table</title>
+    <link rel="stylesheet" href="assets/css/book.css">
+    <link rel="stylesheet" href="assets/css/nav_foot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+
+    <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-moon">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+
+
+    <!-- Header senniydi djafar -->
+    <!-- <header>...</header> -->
+
+
+    <header>
+        <div class="black-lent">
+            <div class="lent-items">
+                <div class="number-mail">
+                    <p class="number"> <i class="fa-sharp fa-solid fa-phone"></i> (055) 999-99-97</p>
+                    <p class="mail"> <a href="https://github.com/efraimmemmed01/FullStack_5_Group_1" target="_blank"><i
+                                class="fa-regular fa-envelope"></i></a>
+                        <a id="mail-text" target="_blank"
+                            href="https://github.com/efraimmemmed01/FullStack_5_Group_1">Fullstack_5@github.com</a>
+                    </p>
+                </div>
+                <div class="social-logos">
+                    <div><a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+                    <div><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <div><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div><a href="https://github.com/efraimmemmed01/FullStack_5_Group_1" target="_blank"><i
+                                class="fa-brands fa-github"></i></a></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="down-section">
+            <div class="down-items">
+                <div class="logo">
+                    <img src="assets/image/nav_logo.svg" alt="firm-logo">
+                    <em>
+                        <h1>Bistro Bliss</h1>
+                    </em>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="about.html">About</a></li>
+                        <li><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li><a class="nav-link" href="blog.html">Pages</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="buttons">
+
+                    <i class="fa-solid fa-bars"></i>
+                    <button>Book A Table</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="slider-holder">
+            <div class="slider-nav">
+                <nav>
+                    <ul>
+                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="about.html">About</a></li>
+                        <li><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li><a class="nav-link" href="blog.html">Pages</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="book-table-wrapper">
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="page-header">
+                    <h1 class="page-title">Masa Sifarişi</h1>
+                    <p class="page-subtitle">Biz sizin rahatlığınız üçün hər bir detalı düşünürük və sizə unudulmaz
+                        təcrübə
+                        yaşatmaq üçün çalışırıq.</p>
+                </div>
+
+                <div class="main-card">
+                    <form id="bookingForm" class="styled-form">
+                        <div class="form-group">
+                            <label for="date">Tarix</label>
+                            <input type="date" id="date" class="form-control" placeholder="GG/AA/İİİİ" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Saat</label>
+                            <select id="time" class="form-control" required>
+                                <option value="">Vaxtı seçin</option>
+                                <option value="17:00">17:00 (24 saatlıq rejim)</option>
+                                <option value="17:30">17:30 (24 saatlıq rejim)</option>
+                                <option value="18:00">18:00 (24 saatlıq rejim)</option>
+                                <option value="18:30">18:30 (24 saatlıq rejim)</option>
+                                <option value="19:00">19:00 (24 saatlıq rejim)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Ad</label>
+                            <input type="text" id="name" class="form-control" placeholder="Adınızı daxil edin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Əlaqə Nömrəsi</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="x-xxx-xxx-xxxx" required>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="person">Neçə Nəfər</label>
+                            <select id="person" class="form-control" required>
+                                <option value="1">1 Nəfər</option>
+                                <option value="2">2 Nəfər</option>
+                                <option value="3">3 Nəfər</option>
+                                <option value="4">4 Nəfər</option>
+                                <option value="5">5+ Nəfər</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn-submit">Masa Sifariş Et</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-background-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.428490145624!2d49.85447731536412!3d40.37719497936968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d079efb5163%3A0xc20aa51a5f0f5e01!2sBaku%2C%20Azerbaijan!5e0!3m2!1sen!2s!4v1645564756836!5m2!1sen!2s"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- Footer senniydi djafar -->
+    <!-- <footer>...</footer> -->
+
+
+
+    <footer>
+
+        <div class="footer-items">
+
+            <div class="logo-and-text">
+                <div class="logo">
+                    <img src="assets/image/nav_logo.svg" alt="firm-logo">
+                    <em>
+                        <h1>Bistro Bliss</h1>
+                    </em>
+                </div>
+
+                <p>In the new era of technology we look a <br>in the future with certainty and pride to for our company
+                    and.
+                </p>
+
+                <div class="social-logos">
+                    <div><a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+                    <div><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <div><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div><a href="https://github.com/efraimmemmed01/FullStack_5_Group_1" target="_blank"><i
+                                class="fa-brands fa-github"></i></a></div>
+                </div>
+            </div>
+
+
+            <div class="utility">
+                <ul>
+                    <p>Pages</p>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">Delivery</a></li>
+                </ul>
+                <ul>
+                    <p>Utility Pages</p>
+                    <li><a href="#">Start Here</a></li>
+                    <li><a href="#">Styleguide</a></li>
+                    <li><a href="#">Password Protected</a></li>
+                    <li><a href="#">404 Not Found</a></li>
+                    <li><a href="#">Licences</a></li>
+                    <li><a href="#">Changelog</a></li>
+                    <li><a href="#">View More</a></li>
+                </ul>
+            </div>
+
+            <div class="images-footer">
+                <p>Follow Us On Instagram</p>
+                <div class="images-container">
+                    <img src="assets/image/footer_img_1.png" alt="">
+                    <img src="assets/image/footer_img_2.png" alt="">
+                    <img src="assets/image/footer_img_3.png" alt="">
+                    <img src="assets/image/footer_img_4.png" alt="">
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+        <p class="footer-end">Copyright © 2026 Nurcahan, Ramazan, Rasul, Rafiq, Jafar. All Rights Reserved.</p>
+
+    </footer>
+    <script src="assets/js/book.js"></script>
+
+    <script src="assets/js/nav_foot.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,268 @@
+:root {
+  --gray: #474747;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 22px;
+  background-color: var(--gray);
+}
+
+
+
+.icons {
+  position: absolute;
+  width: 90px;
+  height: 14px;
+  font-size: 5px;
+  letter-spacing: 4px;
+  color: #f9f9f7;
+  top: 7px;
+  right: -19px;
+}
+/* 
+.logo {
+  width: 16px;
+  height: 16px;
+} */
+
+.bistro1 {
+  font-family: Playfair Display;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: 50px;
+  top: 33px;
+}
+/* 
+ul {
+  width: 80px;
+  height: 40px;
+  list-style: none;
+  font-size: 6px;
+  font-family: DM Sans;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  left: 180px;
+  top: 40px;
+} */
+
+.btn1 {
+  position: absolute;
+  border-radius: 8px;
+  border: 0.1px solid;
+  border-color: #2c2f24;
+  font-size: 6px;
+  width: 45px;
+  height: 14px;
+  position: absolute;
+  top: 35px;
+  left: 399px;
+  font-weight: 100;
+}
+
+.blog {
+  font-family: Playfair Display;
+  font-weight: 200;
+  position: absolute;
+  top: 60px;
+  left: 114px;
+}
+
+.we {
+  font-family: DM Sans;
+  color: #414536;
+  position: absolute;
+  top: 109px;
+  font-size: 6px;
+  left: 160px;
+  font-weight: 200;
+}
+
+.to {
+  font-weight: 200;
+  font-family: DM Sans;
+  color: #414536;
+  position: absolute;
+  top: 119px;
+  left: 199px;
+  font-size: 6px;
+}
+.foodCon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  height: auto;
+  width: 85%;
+  max-width: auto;
+  margin: 120px 0px;
+}
+main{
+
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+
+  height: auto !important;
+}
+
+.foodCon div {
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 12px;
+  height: 340px;
+  width: 300px;
+}
+
+.foodCon img {
+  width: 100%;
+  height: 220px;
+  
+}
+
+.foodCon h5 {
+  font-size: 14px;
+  font-family: DM sans;
+  color: #666;
+  margin: 30px 25px 0px 25px
+}
+
+.foodCon h3 {
+  font-size: 20px;
+  font-family: DM Sans;
+  font-weight: 500;
+  margin: 12px 25px 26px 25px;
+}
+
+body {
+  background: #f9f9f7;
+}
+
+
+.bistro2 {
+  color: #ffffff;
+  font-family: Playfair Display;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  left: 65px;
+  top: 655px;
+}
+
+.logo2 {
+  color: #ffffff;
+  width: 15px;
+  height: 15px;
+}
+
+.in {
+  color: #adb29e;
+  font-weight: 100;
+  font-family: DM Sans;
+  font-size: 6px;
+  position: absolute;
+  left: 65px;
+  top: 685px;
+}
+
+.icons2 {
+  color: #ad343e;
+  position: absolute;
+  left: 65px;
+  top: 719px;
+  font-size: 9px;
+}
+
+.navbCon2 {
+  font-weight: 300;
+  width: 80px;
+  height: 40px;
+  list-style: none;
+  font-size: 3px;
+  font-family: DM Sans;
+  position: absolute;
+  top: 610px;
+  left: 30px;
+  color: #dbdfd0;
+}
+
+
+.navbCon3 {
+  font-weight: 300;
+  width: 80px;
+  height: 40px;
+  list-style: none;
+  font-size: 3px;
+  font-family: DM Sans;
+  position: absolute;
+  top: 610px;
+  left: 90px;
+  color: #dbdfd0;
+}
+
+.follow {
+  color: DBDFD0;
+  font-family: DM Sans;
+  font-weight: 900;
+  font-size: 5.5px;
+    color: #dbdfd0;
+position: absolute;
+left: 350px;
+top: 655px;
+}
+
+.insta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  width: fit-content;
+  margin: 0 auto;
+  position: absolute;
+  left: 350px;
+  top: 670px;
+}
+
+.insta img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+
+
+.foodCon div{
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foodCon div:hover{
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 12px 20px;
+}
+
+
+.copyright{
+  font-weight: 400;
+  width: 200px;
+  height: 50px;
+  font-size: 4px;
+  position: absolute;
+  top: 814px;
+  left: 210px;
+color: #ADB29E;
+
+}
+
