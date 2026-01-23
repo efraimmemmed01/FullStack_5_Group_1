@@ -1,2 +1,2 @@
-alert("Blog sehifesine xosh gelmisiniz!")
+// alert("Blog sehifesine xosh gelmisiniz!")
 

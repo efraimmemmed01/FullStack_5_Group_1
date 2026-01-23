@@ -105,7 +105,7 @@ header {
         display: flex;
         justify-content: space-between;
         width: 85%;
-        height: 105;
+        /* height: 105px; */
     }
 
     div {
