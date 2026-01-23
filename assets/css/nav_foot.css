@@ -255,7 +255,9 @@ footer {
 
 
         .logo-and-text {
-
+            h1{
+                color: white;
+            }
             width: 290px;
             height: auto;
             /* background-color: #DBDFD0; */

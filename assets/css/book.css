@@ -28,6 +28,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    height: auto !important;
+}
 
 body {
     font-family: 'DM Sans', sans-serif;
